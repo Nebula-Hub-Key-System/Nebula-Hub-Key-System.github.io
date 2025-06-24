@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Get Your Nebula Hub Key</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(to bottom, #0f0f2e, #050512);
+      color: #ffffff;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      padding: 20px;
+    }
+
+    h1 {
+      font-size: 2.5em;
+      margin-bottom: 0.5em;
+      background: linear-gradient(to right, #7f5af0, #00c9ff);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    p {
+      color: #a1a1b5;
+      margin-bottom: 2em;
+      text-align: center;
+    }
+
+    .input-box {
+      width: 100%;
+      max-width: 400px;
+      display: flex;
+      flex-direction: column;
+      gap: 1em;
+    }
+
+    input[type="text"] {
+      padding: 1em;
+      font-size: 1em;
+      border: none;
+      border-radius: 10px;
+      background-color: #1a1a2f;
+      color: #ffffff;
+      text-align: center;
+      outline: none;
+    }
+
+    button {
+      padding: 1em;
+      font-size: 1.1em;
+      background: linear-gradient(135deg, #7f5af0, #00c9ff);
+      border: none;
+      border-radius: 10px;
+      color: white;
+      cursor: pointer;
+      transition: all 0.25s ease;
+    }
+
+    button:hover {
+      transform: scale(1.05);
+      box-shadow: 0 8px 16px rgba(0,0,0,0.3);
+    }
+
+    .footer {
+      position: absolute;
+      bottom: 20px;
+      font-size: 0.85em;
+      color: #666;
+    }
+  </style>
+</head>
+<body>
+  <h1>Generate Your Key</h1>
+  <p>Click below to reveal the Nebula Hub official key.</p>
+
+  <div class="input-box">
+    <input type="text" id="keyField" placeholder="Click the button below" readonly />
+    <button onclick="revealKey()">Reveal Key</button>
+  </div>
+
+  <div class="footer">
+    &copy; 2025 Nebula Hub | One Key System
+  </div>
+
+  <script>
+    function revealKey() {
+      const key = "Nebula-Hub-Revival_2025";
+      document.getElementById("keyField").value = key;
+    }
+  </script>
+</body>
+</html>
